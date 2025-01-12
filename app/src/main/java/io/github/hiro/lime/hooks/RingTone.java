@@ -113,7 +113,11 @@ public class RingTone implements IHook {
                                                 return; // 再生中の場合は何もしない
                                             }
 
+                                            Uri customRingtoneUri = Uri.parse("file://" + Environment.getExternalStorageDirectory().getPath() + "/Notifications/LINE_Dialtone.mp3");
                                             Uri ringtoneUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
+                                            if (isFileExists(customRingtoneUri)) {
+                                                ringtoneUri = customRingtoneUri;
+                                            }
                                             ringtone = RingtoneManager.getRingtone(appContext, ringtoneUri);
 
                                             if (ringtone != null) {
@@ -154,6 +158,18 @@ public class RingTone implements IHook {
                 }
             }
         });
+    }
+
+    public boolean isFileExists(Uri uri) {
+        if (uri == null) {
+            return false;
+        }
+        String filePath = uri.getPath();
+        if (filePath == null) {
+            return false;
+        }
+        File file = new File(filePath);
+        return file.exists();
     }
 }
 
