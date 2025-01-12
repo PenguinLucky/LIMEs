@@ -21,7 +21,7 @@ public class RingTone implements IHook {
     private boolean isPlaying = false;
     @Override
     public void hook(LimeOptions limeOptions, XC_LoadPackage.LoadPackageParam loadPackageParam) throws Throwable {
-        if (!limeOptions.DeviceCallTone.checked && !limeOptions.DeviceDialTone.checked && !limeOptions.MuteCallTone.checked && !limeOptions.MuteDialTone.checked) {
+        if (!limeOptions.DeviceCallTone.checked && !limeOptions.MuteCallTone.checked && !limeOptions.CustomDialTone.checked) {
             return;
         }
 
@@ -68,7 +68,7 @@ public class RingTone implements IHook {
                             });
                 }
 
-                if (!limeOptions.DeviceDialTone.checked && !limeOptions.MuteCallTone.checked && !limeOptions.MuteDialTone.checked) {
+                if (!limeOptions.MuteCallTone.checked && !limeOptions.CustomDialTone.checked) {
                     return;
                 }
 
