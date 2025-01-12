@@ -142,7 +142,7 @@
     <string name="horizontalMarginFactor">"Horizontal margin "</string>
     <string name="vertical">Vertical margin</string>
     <string name="DeviceCallTone">Device Ringtones(For LsPatch)</string>
-    <string name="CustomDialTone" translatable="false">呼出音のカスタマイズ\n./Notifications/LINE_Dialtone.mp3を再生します\nファイルがない場合は本体の着信音を再生します</string>
+    <string name="CustomDialTone" translatable="false">呼出音のカスタマイズ\n/sdcard/Notifications/LINE_Dialtone.mp3を再生します\nファイルがない場合は本体の着信音を再生します</string>
 
 
 </resources>
