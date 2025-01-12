@@ -141,9 +141,8 @@
     <string name="edit_margin_settings">KeepUnread button location</string>
     <string name="horizontalMarginFactor">"Horizontal margin "</string>
     <string name="vertical">Vertical margin</string>
-    <string name="MuteDialTone" translatable="false">(Root用)呼出音のミュート</string>
     <string name="DeviceCallTone">Device Ringtones(For LsPatch)</string>
-    <string name="DeviceDialTone" translatable="false">本体の呼出音を鳴らす(LsPach用)</string>
+    <string name="CustomDialTone" translatable="false">呼出音のカスタマイズ\n./Notifications/LINE_Dialtone.mp3を再生します\nファイルがない場合は本体の着信音を再生します</string>
 
 
 </resources>
